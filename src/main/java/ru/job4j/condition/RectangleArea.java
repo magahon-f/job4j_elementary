@@ -3,7 +3,9 @@ package ru.job4j.condition;
 public class RectangleArea {
 
     public static double square(double p, double k) {
-        double result = Math.pow(p, 2) * (k / (2 * (k + 1))) * (1 / (2 * (k + 1)));
+        double h = p / (2 * (k + 1));
+        double l = h * k;
+        double result = l * h;
         return result;
     }
 
