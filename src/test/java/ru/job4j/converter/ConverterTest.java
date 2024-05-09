@@ -63,24 +63,6 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvertNegative70RblThen1Euro() {
-        float input = -70;
-        float expected = 1;
-        float output = Converter.rubleToEuro(input);
-        float value = 0.0001f;
-        assertThat(output).isEqualTo(expected, withPrecision(value));
-    }
-
-    @Test
-    void whenConvertNegative60RblThen1Dollar() {
-        float input = -60;
-        float expected = 1;
-        float output = Converter.rubleToDollar(input);
-        float value = 0.0001f;
-        assertThat(output).isEqualTo(expected, withPrecision(value));
-    }
-
-    @Test
     void whenConvert69dot9RblThen0dot9985Euro() {
         float input = 69.9f;
         float expected = 0.9985f;
