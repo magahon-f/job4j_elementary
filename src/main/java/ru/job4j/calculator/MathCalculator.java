@@ -10,6 +10,9 @@ public class MathCalculator {
     }
 
     public static double subtractAndDivide(double first, double second) {
+        if (second == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
         return subtract(first, second)
                 + divide(first, second);
     }
