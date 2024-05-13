@@ -11,7 +11,6 @@ class FitTest {
         short input = 180;
         double expected = 92;
         double output = Fit.manWeight(input);
-        System.out.println(output);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
@@ -20,7 +19,6 @@ class FitTest {
         short input = 167;
         double expected = 77;
         double output = Fit.manWeight(input);
-        System.out.println(output);
         assertThat(output).isEqualTo(expected, withPrecision(0.05));
     }
 }
